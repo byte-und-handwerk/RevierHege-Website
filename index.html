@@ -13,8 +13,8 @@
     <meta property="og:description" content="Vom Praxisproblem zum funktionierenden iOS-Piloten – ein Referenzprojekt von byte &amp; Handwerk.">
     <link rel="icon" type="image/png" href="assets/images/revierhege-icon.png">
     <link rel="apple-touch-icon" href="assets/images/revierhege-icon.png">
-    <link rel="stylesheet" href="assets/styles.css?v=20260808-1">
-    <script src="assets/site.js" defer></script>
+    <link rel="stylesheet" href="assets/styles.css?v=20260808-3">
+    <script src="assets/site.js?v=20260808-2" defer></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -46,6 +46,7 @@
       <nav class="desktop-nav" aria-label="Hauptnavigation">
         <a href="#ausgangslage">Ausgangslage</a>
         <a href="#produkt">Produkt</a>
+        <a href="#einblicke">Einblicke</a>
         <a href="#projektweg">Projektweg</a>
         <a href="#ergebnis">Ergebnis</a>
       </nav>
@@ -55,6 +56,7 @@
     <nav class="mobile-nav" data-mobile-nav aria-label="Mobile Navigation" aria-hidden="true">
       <a href="#ausgangslage">Ausgangslage</a>
       <a href="#produkt">Produkt</a>
+      <a href="#einblicke">Einblicke</a>
       <a href="#projektweg">Projektweg</a>
       <a href="#ergebnis">Ergebnis</a>
       <a href="https://byteundhandwerk.de/referenz-revierhege.html">Fallstudie bei byte &amp; Handwerk</a>
@@ -107,25 +109,20 @@
 
       <section class="section section-paper" id="produkt">
         <div class="product-layout">
-          <div class="app-preview" aria-label="Schematische Darstellung der RevierHege-App">
+          <figure class="app-preview">
             <div class="phone-frame">
-              <div class="phone-top"><span>9:41</span><strong>RevierHege</strong><span>•••</span></div>
-              <div class="map-screen">
-                <span class="map-line map-line-one"></span>
-                <span class="map-line map-line-two"></span>
-                <span class="station station-one">1</span>
-                <span class="station station-two is-empty">2</span>
-                <span class="station station-three">3</span>
-                <div class="map-summary"><small>Revierübersicht</small><strong>Alle Kirrungen auf einer Karte</strong><span><i></i> aktuell synchronisiert</span></div>
-              </div>
-              <div class="phone-nav"><span>Karte</span><span>Verlauf</span><span>Revier</span></div>
+              <img src="assets/images/screenshots/revierkarte.jpg" width="828" height="1800" alt="Revierkarte der RevierHege-App mit zwei markierten Kirrungen und unterschiedlichem Status">
             </div>
-            <p>Schematische App-Darstellung</p>
-          </div>
+            <figcaption>Echte Ansicht aus dem funktionierenden iOS-MVP</figcaption>
+          </figure>
           <div class="section-heading product-copy">
             <p class="eyebrow">Das entstandene Produkt</p>
             <h2>Eine kleine App für einen klar begrenzten Ablauf.</h2>
             <p>Der MVP wurde nicht als Funktionssammlung gebaut. Karte, Status, Notizen, Historie und Revierzugang bilden genau den Ablauf ab, den die Pilotgruppe gemeinsam organisieren wollte.</p>
+            <div class="product-testflight">
+              <a class="button" href="https://testflight.apple.com/join/mZbs236u" target="_blank" rel="noopener noreferrer">RevierHege über TestFlight testen</a>
+              <span>Öffentlicher Betatest · iPhone mit iOS 17 oder neuer</span>
+            </div>
             <ul class="feature-list">
               <li><span>01</span><div><strong>Kartenansicht</strong><p>Kirrungen anzeigen und direkt auf der Karte anlegen.</p></div></li>
               <li><span>02</span><div><strong>Status und Notizen</strong><p>Aktuellen Zustand festhalten und Informationen ergänzen.</p></div></li>
@@ -134,6 +131,53 @@
             </ul>
           </div>
         </div>
+      </section>
+
+      <section class="section section-white screenshot-section" id="einblicke">
+        <div class="section-heading">
+          <p class="eyebrow">Einblicke in den MVP</p>
+          <h2>Der gemeinsame Revierstand – vom Überblick bis ins Detail.</h2>
+          <p>Die Aufnahmen zeigen den getesteten Funktionsumfang: Status erfassen, Veränderungen nachvollziehen, Berechtigungen verwalten und alle Beteiligten auf demselben Stand halten.</p>
+        </div>
+        <div class="screenshot-gallery" aria-label="App-Ansichten aus RevierHege">
+          <figure class="screenshot-card">
+            <button class="screenshot-open" type="button" data-screenshot-open data-screenshot-src="assets/images/screenshots/dashboard.png" data-screenshot-alt="Dashboard der RevierHege-App mit Kennzahlen, letzten Aktivitäten und Kirrungsstatus" data-screenshot-caption="Dashboard – Kennzahlen, Aktivitäten und Kirrungsstatus" aria-label="Dashboard vergrößern">
+              <img src="assets/images/screenshots/dashboard.png" width="828" height="1800" loading="lazy" alt="Dashboard der RevierHege-App mit Kennzahlen, letzten Aktivitäten und Kirrungsstatus">
+            </button>
+            <figcaption><strong>Dashboard</strong><span>Kennzahlen, Aktivitäten und Kirrungsstatus.</span></figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <button class="screenshot-open" type="button" data-screenshot-open data-screenshot-src="assets/images/screenshots/kirrung-status.png" data-screenshot-alt="Detailansicht einer Kirrung mit aktuellem Status, Kontrollintervall und Notizfunktion" data-screenshot-caption="Kirrungsdetail – Status, Kontrollintervall und Notizen" aria-label="Kirrungsdetail vergrößern">
+              <img src="assets/images/screenshots/kirrung-status.png" width="828" height="1800" loading="lazy" alt="Detailansicht einer Kirrung mit aktuellem Status, Kontrollintervall und Notizfunktion">
+            </button>
+            <figcaption><strong>Kirrungsdetail</strong><span>Status, Kontrollintervall und Notizen.</span></figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <button class="screenshot-open" type="button" data-screenshot-open data-screenshot-src="assets/images/screenshots/kirrung-logbuch.png" data-screenshot-alt="Logbuch und Verwaltungsbereich einer Kirrung mit protokollierten Änderungen" data-screenshot-caption="Logbuch – Änderungen und Verwaltung nachvollziehen" aria-label="Logbuch vergrößern">
+              <img src="assets/images/screenshots/kirrung-logbuch.png" width="828" height="1800" loading="lazy" alt="Logbuch und Verwaltungsbereich einer Kirrung mit protokollierten Änderungen">
+            </button>
+            <figcaption><strong>Logbuch</strong><span>Änderungen und Verwaltung nachvollziehen.</span></figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <button class="screenshot-open" type="button" data-screenshot-open data-screenshot-src="assets/images/screenshots/profil-berechtigungen.png" data-screenshot-alt="Profilansicht der RevierHege-App mit Revierzuordnung, Rolle und Berechtigungen" data-screenshot-caption="Profil – Revierzuordnung und Berechtigungen" aria-label="Profil und Berechtigungen vergrößern">
+              <img src="assets/images/screenshots/profil-berechtigungen.png" width="828" height="1800" loading="lazy" alt="Profilansicht der RevierHege-App mit Revierzuordnung, Rolle und Berechtigungen">
+            </button>
+            <figcaption><strong>Profil</strong><span>Revierzuordnung und Berechtigungen.</span></figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <button class="screenshot-open" type="button" data-screenshot-open data-screenshot-src="assets/images/screenshots/profil-support-rechtliches.png" data-screenshot-alt="Profilbereich der RevierHege-App mit Support, Rechtstexten und Kontoverwaltung" data-screenshot-caption="Kontoverwaltung – Support, Rechtliches und persönliche Daten" aria-label="Kontoverwaltung vergrößern">
+              <img src="assets/images/screenshots/profil-support-rechtliches.png" width="828" height="1800" loading="lazy" alt="Profilbereich der RevierHege-App mit Support, Rechtstexten und Kontoverwaltung">
+            </button>
+            <figcaption><strong>Kontoverwaltung</strong><span>Support, Rechtliches und persönliche Daten.</span></figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <button class="screenshot-open" type="button" data-screenshot-open data-screenshot-src="assets/images/screenshots/mitgliedsanfragen.png" data-screenshot-alt="Ansicht für offene Mitgliedsanfragen innerhalb einer geschlossenen Reviergruppe" data-screenshot-caption="Mitgliedsanfragen – kontrollierter Zugang zum Revier" aria-label="Mitgliedsanfragen vergrößern">
+              <img src="assets/images/screenshots/mitgliedsanfragen.png" width="828" height="1800" loading="lazy" alt="Ansicht für offene Mitgliedsanfragen innerhalb einer geschlossenen Reviergruppe">
+            </button>
+            <figcaption><strong>Mitgliedsanfragen</strong><span>Kontrollierter Zugang zum Revier.</span></figcaption>
+          </figure>
+        </div>
+        <p class="gallery-hint">Bild auswählen, um die Ansicht zu vergrößern.</p>
       </section>
 
       <section class="section section-dark" id="projektweg">
@@ -197,9 +241,17 @@
         <div class="footer-mark"><img src="assets/images/revierhege-icon.png" alt=""><strong>RevierHege</strong></div>
         <p>Ein Referenzprojekt von byte &amp; Handwerk.</p>
       </div>
-      <div class="footer-links"><strong>Projekt</strong><a href="#ausgangslage">Ausgangslage</a><a href="#produkt">Produkt</a><a href="#projektweg">Projektweg</a><a href="#ergebnis">Ergebnis</a></div>
+      <div class="footer-links"><strong>Projekt</strong><a href="#ausgangslage">Ausgangslage</a><a href="#produkt">Produkt</a><a href="#einblicke">Einblicke</a><a href="#projektweg">Projektweg</a><a href="#ergebnis">Ergebnis</a></div>
       <div class="footer-links"><strong>Rechtliches</strong><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz Website</a><a href="app-datenschutz.html">Datenschutz App</a></div>
       <div class="footer-meta">© <span data-current-year>2026</span> Dominik Baki · RevierHege ist ein Projekt von <a href="https://byteundhandwerk.de/">byte &amp; Handwerk</a>.</div>
     </footer>
+
+    <dialog class="screenshot-dialog" data-screenshot-dialog aria-label="Vergrößerte App-Ansicht">
+      <button class="screenshot-dialog-close" type="button" data-screenshot-close aria-label="Ansicht schließen">Schließen</button>
+      <div class="screenshot-dialog-content">
+        <img data-screenshot-dialog-image alt="">
+        <p data-screenshot-dialog-caption></p>
+      </div>
+    </dialog>
   </body>
 </html>
