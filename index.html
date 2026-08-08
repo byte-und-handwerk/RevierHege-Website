@@ -1,1 +1,205 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RevierHege – Kirrungen gemeinsam im Blick</title>
+    <meta name="description" content="RevierHege ist eine native iOS-App zur gemeinsamen Verwaltung von Kirrungen in kleinen, geschlossenen Reviergruppen.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#102a21">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:title" content="RevierHege – Kirrungen gemeinsam im Blick">
+    <meta property="og:description" content="Vom Praxisproblem zum funktionierenden iOS-Piloten – ein Referenzprojekt von byte &amp; Handwerk.">
+    <link rel="icon" type="image/png" href="assets/images/revierhege-icon.png">
+    <link rel="apple-touch-icon" href="assets/images/revierhege-icon.png">
+    <link rel="stylesheet" href="assets/styles.css?v=20260808-1">
+    <script src="assets/site.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "RevierHege",
+        "applicationCategory": "ProductivityApplication",
+        "operatingSystem": "iOS 17 oder neuer",
+        "description": "Native iOS-App zur gemeinsamen Verwaltung von Kirrungen in kleinen Reviergruppen.",
+        "author": {
+          "@type": "Person",
+          "name": "Dominik Baki"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "byte & Handwerk",
+          "url": "https://byteundhandwerk.de/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
 
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="RevierHege Startseite">
+        <img src="assets/images/revierhege-icon.png" alt="">
+        <span><strong>RevierHege</strong><small>Ein Referenzprojekt von byte &amp; Handwerk</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Hauptnavigation">
+        <a href="#ausgangslage">Ausgangslage</a>
+        <a href="#produkt">Produkt</a>
+        <a href="#projektweg">Projektweg</a>
+        <a href="#ergebnis">Ergebnis</a>
+      </nav>
+      <a class="button button-small" href="https://byteundhandwerk.de/referenz-revierhege.html" target="_blank" rel="noopener noreferrer">Fallstudie lesen</a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Menü öffnen" aria-expanded="false"><span></span></button>
+    </header>
+    <nav class="mobile-nav" data-mobile-nav aria-label="Mobile Navigation" aria-hidden="true">
+      <a href="#ausgangslage">Ausgangslage</a>
+      <a href="#produkt">Produkt</a>
+      <a href="#projektweg">Projektweg</a>
+      <a href="#ergebnis">Ergebnis</a>
+      <a href="https://byteundhandwerk.de/referenz-revierhege.html">Fallstudie bei byte &amp; Handwerk</a>
+    </nav>
+
+    <main id="main-content">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Native iOS-App · Revierorganisation</p>
+          <h1>Kirrungen gemeinsam im Blick.<span>Ohne Zuruf und Zettelwirtschaft.</span></h1>
+          <p class="hero-lead">RevierHege bündelt Standorte, Status, Notizen und Änderungen in einer gemeinsamen Revieransicht. Entwickelt mit einer kleinen Pilotgruppe – für einen konkreten Ablauf im Jagdalltag.</p>
+          <div class="hero-actions">
+            <a class="button" href="#produkt">Produkt ansehen</a>
+            <a class="button button-outline" href="#ergebnis">Produktentscheidung verstehen</a>
+          </div>
+          <ul class="trust-list" aria-label="Projektmerkmale">
+            <li>Native iOS-App</li>
+            <li>Geschlossene Reviergruppen</li>
+            <li>Live-Synchronisation</li>
+            <li>Praxistest über TestFlight</li>
+          </ul>
+        </div>
+
+        <div class="brand-stage" aria-label="RevierHege App-Symbol und Projektstatus">
+          <span class="stage-label">Projektstatus · MVP funktional abgeschlossen</span>
+          <img src="assets/images/revierhege-icon.png" alt="RevierHege App-Symbol mit Wald, Wildschwein, Kirrung und Kartenmarkierung">
+          <div class="stage-footer"><span>iOS 17+</span><strong>Pilot validiert</strong></div>
+        </div>
+      </section>
+
+      <section class="project-stats" aria-label="Projektüberblick">
+        <div><strong>iOS</strong><span>Native Anwendung</span></div>
+        <div><strong>SwiftUI</strong><span>Oberfläche</span></div>
+        <div><strong>Firebase</strong><span>Live-Daten</span></div>
+        <div><strong>TestFlight</strong><span>Praxistest</span></div>
+      </section>
+
+      <section class="section section-white" id="ausgangslage">
+        <div class="section-heading">
+          <p class="eyebrow">Die Ausgangslage</p>
+          <h2>Mehrere Personen. Dieselben Kirrungen. Keine gemeinsame Sicht.</h2>
+          <p>Telefon, WhatsApp und Erinnerung reichten nicht immer aus, wenn eine kleine Gruppe dieselben Kirrungen betreute. RevierHege entstand aus dem Wunsch, den aktuellen Stand an einem Ort nachvollziehbar zu machen.</p>
+        </div>
+        <div class="problem-grid">
+          <article><span class="card-number">01 · Standort</span><h3>Wo liegt welche Kirrung?</h3><p>Eine gemeinsame Kartenansicht macht Standorte für berechtigte Mitglieder direkt sichtbar.</p></article>
+          <article class="accent-card"><span class="card-number">02 · Status</span><h3>Was muss als Nächstes passieren?</h3><p>Der Status „voll“ oder „leer“ zeigt, wo eine Kontrolle oder Handlung ansteht.</p></article>
+          <article><span class="card-number">03 · Verlauf</span><h3>Was wurde zuletzt erledigt?</h3><p>Notizen und Historie schaffen Nachvollziehbarkeit, ohne Informationen erneut abzufragen.</p></article>
+        </div>
+      </section>
+
+      <section class="section section-paper" id="produkt">
+        <div class="product-layout">
+          <div class="app-preview" aria-label="Schematische Darstellung der RevierHege-App">
+            <div class="phone-frame">
+              <div class="phone-top"><span>9:41</span><strong>RevierHege</strong><span>•••</span></div>
+              <div class="map-screen">
+                <span class="map-line map-line-one"></span>
+                <span class="map-line map-line-two"></span>
+                <span class="station station-one">1</span>
+                <span class="station station-two is-empty">2</span>
+                <span class="station station-three">3</span>
+                <div class="map-summary"><small>Revierübersicht</small><strong>Alle Kirrungen auf einer Karte</strong><span><i></i> aktuell synchronisiert</span></div>
+              </div>
+              <div class="phone-nav"><span>Karte</span><span>Verlauf</span><span>Revier</span></div>
+            </div>
+            <p>Schematische App-Darstellung</p>
+          </div>
+          <div class="section-heading product-copy">
+            <p class="eyebrow">Das entstandene Produkt</p>
+            <h2>Eine kleine App für einen klar begrenzten Ablauf.</h2>
+            <p>Der MVP wurde nicht als Funktionssammlung gebaut. Karte, Status, Notizen, Historie und Revierzugang bilden genau den Ablauf ab, den die Pilotgruppe gemeinsam organisieren wollte.</p>
+            <ul class="feature-list">
+              <li><span>01</span><div><strong>Kartenansicht</strong><p>Kirrungen anzeigen und direkt auf der Karte anlegen.</p></div></li>
+              <li><span>02</span><div><strong>Status und Notizen</strong><p>Aktuellen Zustand festhalten und Informationen ergänzen.</p></div></li>
+              <li><span>03</span><div><strong>Historie</strong><p>Änderungen innerhalb der Reviergruppe nachvollziehen.</p></div></li>
+              <li><span>04</span><div><strong>Rollen und Revierzuordnung</strong><p>Daten bleiben auf die jeweils freigegebene Gruppe begrenzt.</p></div></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="projektweg">
+        <div class="process-layout">
+          <div class="section-heading">
+            <p class="eyebrow eyebrow-light">Der Projektweg</p>
+            <h2>Vom beobachteten Problem zur belastbaren Entscheidung.</h2>
+            <p>Nicht die Menge der Funktionen war der Maßstab, sondern die Frage, was im Alltag hilft und ob daraus ein tragfähiges Produkt entstehen kann.</p>
+          </div>
+          <div class="process-list">
+            <article><span>01</span><h3>Verstehen</h3><p>Ablauf, Rollen, Begriffe und Informationsbedarf mit der Pilotgruppe klären.</p></article>
+            <article><span>02</span><h3>Begrenzen</h3><p>Einen engen MVP statt einer vollständigen Jagd-App definieren.</p></article>
+            <article><span>03</span><h3>Erproben</h3><p>Die native App über TestFlight bereitstellen und mit Praxisfeedback verbessern.</p></article>
+            <article><span>04</span><h3>Validieren</h3><p>Bedarf, bestehende Ersatzlösungen und Wettbewerbsumfeld außerhalb der Pilotgruppe prüfen.</p></article>
+            <article><span>05</span><h3>Entscheiden</h3><p>Den kommerziellen Ausbau vorerst nicht weiterverfolgen.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-white" id="ergebnis">
+        <div class="result-layout">
+          <div>
+            <p class="eyebrow">Das Ergebnis</p>
+            <blockquote>Ein funktionierender Pilot kann Nutzen bestätigen – ohne automatisch einen Markt zu beweisen.</blockquote>
+          </div>
+          <div class="result-copy">
+            <h2>Technisch erfolgreich. Produktstrategisch bewusst begrenzt.</h2>
+            <p>RevierHege erfüllt den Anwendungsfall der Pilotgruppe. Die anschließende Marktvalidierung bestätigte jedoch nicht ausreichend, dass ein größerer kommerzieller Ausbau gegenüber vorhandenen Apps und etablierten Arbeitsweisen gerechtfertigt wäre.</p>
+            <p>Deshalb sind aktuell weder Vermarktung noch Android-Version geplant. Das Projekt bleibt eine Referenz für technische Umsetzung, Praxisvalidierung und eine begründete Produktentscheidung.</p>
+            <div class="decision-note"><span>Aktuelle Entscheidung</span><strong>MVP abgeschlossen · kommerzieller Ausbau vorerst nicht geplant</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-deep">
+        <div class="section-heading">
+          <p class="eyebrow">Übertragbare Methode</p>
+          <h2>Die Branche kann sich ändern. Die Methode nicht.</h2>
+          <p>RevierHege zeigt, wie byte &amp; Handwerk Produktideen behandelt: Arbeitsalltag verstehen, Annahmen begrenzen, unter realen Bedingungen prüfen und erst dann über Ausbau entscheiden.</p>
+        </div>
+        <div class="method-grid">
+          <article><span>01</span><h3>Problem vor Produkt</h3><p>Der beobachtete Ablauf bestimmt den ersten Umfang.</p></article>
+          <article><span>02</span><h3>Pilot vor Ausbau</h3><p>Echte Nutzung ersetzt Vermutungen durch Beobachtungen.</p></article>
+          <article><span>03</span><h3>Entscheidung vor Bindung</h3><p>Ein begründetes Nein ist ein verwertbares Ergebnis.</p></article>
+        </div>
+      </section>
+
+      <section class="cta">
+        <p class="eyebrow eyebrow-light">Referenzprojekt von byte &amp; Handwerk</p>
+        <h2>Wie aus RevierHege eine belastbare Produktentscheidung wurde.</h2>
+        <p>Die vollständige Fallstudie beschreibt Ausgangsthese, Praxistest, Marktvalidierung und die Erkenntnisse für weitere digitale Piloten.</p>
+        <div class="hero-actions hero-actions-centered">
+          <a class="button button-light" href="https://byteundhandwerk.de/referenz-revierhege.html" target="_blank" rel="noopener noreferrer">Vollständige Fallstudie lesen</a>
+          <a class="button button-ghost-light" href="https://byteundhandwerk.de/" target="_blank" rel="noopener noreferrer">Zu byte &amp; Handwerk</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <div class="footer-mark"><img src="assets/images/revierhege-icon.png" alt=""><strong>RevierHege</strong></div>
+        <p>Ein Referenzprojekt von byte &amp; Handwerk.</p>
+      </div>
+      <div class="footer-links"><strong>Projekt</strong><a href="#ausgangslage">Ausgangslage</a><a href="#produkt">Produkt</a><a href="#projektweg">Projektweg</a><a href="#ergebnis">Ergebnis</a></div>
+      <div class="footer-links"><strong>Rechtliches</strong><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz Website</a><a href="app-datenschutz.html">Datenschutz App</a></div>
+      <div class="footer-meta">© <span data-current-year>2026</span> Dominik Baki · RevierHege ist ein Projekt von <a href="https://byteundhandwerk.de/">byte &amp; Handwerk</a>.</div>
+    </footer>
+  </body>
+</html>
