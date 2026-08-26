@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>RevierHege – Kirrungen gemeinsam im Blick</title>
-    <meta name="description" content="RevierHege ist eine native iOS-App zur gemeinsamen Verwaltung von Kirrungen in kleinen, geschlossenen Reviergruppen.">
+    <meta name="description" content="RevierHege ist eine mobile App zur gemeinsamen Verwaltung von Kirrungen. Die iOS-Version ist über TestFlight verfügbar; Android befindet sich im Betatest.">
     <meta name="robots" content="noindex, nofollow">
     <meta name="theme-color" content="#102a21">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="de_DE">
     <meta property="og:title" content="RevierHege – Kirrungen gemeinsam im Blick">
-    <meta property="og:description" content="Vom Praxisproblem zum funktionierenden iOS-Piloten – ein Referenzprojekt von byte &amp; Handwerk.">
+    <meta property="og:description" content="RevierHege für iOS und Android: ein validierter iOS-Pilot und eine Android-Version im Betatest.">
     <link rel="icon" type="image/png" href="assets/images/revierhege-icon.png">
     <link rel="apple-touch-icon" href="assets/images/revierhege-icon.png">
-    <link rel="stylesheet" href="assets/styles.css?v=20260808-3">
+    <link rel="stylesheet" href="assets/styles.css?v=20260826-1">
     <script src="assets/site.js?v=20260808-2" defer></script>
     <script type="application/ld+json">
       {
@@ -21,8 +21,8 @@
         "@type": "SoftwareApplication",
         "name": "RevierHege",
         "applicationCategory": "ProductivityApplication",
-        "operatingSystem": "iOS 17 oder neuer",
-        "description": "Native iOS-App zur gemeinsamen Verwaltung von Kirrungen in kleinen Reviergruppen.",
+        "operatingSystem": ["iOS 17 oder neuer", "Android (Beta)"],
+        "description": "Mobile App für iOS und Android zur gemeinsamen Verwaltung von Kirrungen in kleinen Reviergruppen.",
         "author": {
           "@type": "Person",
           "name": "Dominik Baki"
@@ -65,7 +65,7 @@
     <main id="main-content">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Native iOS-App · Revierorganisation</p>
+          <p class="eyebrow">Mobile App für iOS und Android · Revierorganisation</p>
           <h1>Kirrungen gemeinsam im Blick.<span>Ohne Zuruf und Zettelwirtschaft.</span></h1>
           <p class="hero-lead">RevierHege bündelt Standorte, Status, Notizen und Änderungen in einer gemeinsamen Revieransicht. Entwickelt mit einer kleinen Pilotgruppe – für einen konkreten Ablauf im Jagdalltag.</p>
           <div class="hero-actions">
@@ -73,25 +73,25 @@
             <a class="button button-outline" href="#ergebnis">Produktentscheidung verstehen</a>
           </div>
           <ul class="trust-list" aria-label="Projektmerkmale">
-            <li>Native iOS-App</li>
+            <li>iOS-App und Android-Beta</li>
             <li>Geschlossene Reviergruppen</li>
             <li>Live-Synchronisation</li>
-            <li>Praxistest über TestFlight</li>
+            <li>Betatest auf beiden Plattformen</li>
           </ul>
         </div>
 
         <div class="brand-stage" aria-label="RevierHege App-Symbol und Projektstatus">
-          <span class="stage-label">Projektstatus · MVP funktional abgeschlossen</span>
+          <span class="stage-label">Projektstatus · iOS-Pilot validiert · Android-Beta</span>
           <img src="assets/images/revierhege-icon.png" alt="RevierHege App-Symbol mit Wald, Wildschwein, Kirrung und Kartenmarkierung">
-          <div class="stage-footer"><span>iOS 17+</span><strong>Pilot validiert</strong></div>
+          <div class="stage-footer"><span>iOS 17+ · Android-Beta</span><strong>Praxistest</strong></div>
         </div>
       </section>
 
       <section class="project-stats" aria-label="Projektüberblick">
-        <div><strong>iOS</strong><span>Native Anwendung</span></div>
-        <div><strong>SwiftUI</strong><span>Oberfläche</span></div>
+        <div><strong>iOS</strong><span>TestFlight-Beta</span></div>
+        <div><strong>Android</strong><span>Beta-Test</span></div>
         <div><strong>Firebase</strong><span>Live-Daten</span></div>
-        <div><strong>TestFlight</strong><span>Praxistest</span></div>
+        <div><strong>2</strong><span>Plattformen</span></div>
       </section>
 
       <section class="section section-white" id="ausgangslage">
@@ -118,10 +118,16 @@
           <div class="section-heading product-copy">
             <p class="eyebrow">Das entstandene Produkt</p>
             <h2>Eine kleine App für einen klar begrenzten Ablauf.</h2>
-            <p>Der MVP wurde nicht als Funktionssammlung gebaut. Karte, Status, Notizen, Historie und Revierzugang bilden genau den Ablauf ab, den die Pilotgruppe gemeinsam organisieren wollte.</p>
-            <div class="product-testflight">
-              <a class="button" href="https://testflight.apple.com/join/mZbs236u" target="_blank" rel="noopener noreferrer">RevierHege über TestFlight testen</a>
-              <span>Öffentlicher Betatest · iPhone mit iOS 17 oder neuer</span>
+            <p>Der MVP wurde nicht als Funktionssammlung gebaut. Karte, Status, Notizen, Historie und Revierzugang bilden genau den Ablauf ab, den die Pilotgruppe gemeinsam organisieren wollte. Neben der erprobten iOS-Version befindet sich inzwischen auch eine Android-Version im Betatest.</p>
+            <div class="product-testing" aria-label="Betatest für iOS und Android">
+              <div class="platform-test">
+                <a class="button" href="https://testflight.apple.com/join/mZbs236u" target="_blank" rel="noopener noreferrer">iOS über TestFlight testen</a>
+                <span>Öffentlicher Betatest · iPhone mit iOS 17 oder neuer</span>
+              </div>
+              <div class="platform-test platform-test-android">
+                <strong>Android-Beta</strong>
+                <span>Die Android-Version befindet sich aktuell im Betatest.</span>
+              </div>
             </div>
             <ul class="feature-list">
               <li><span>01</span><div><strong>Kartenansicht</strong><p>Kirrungen anzeigen und direkt auf der Karte anlegen.</p></div></li>
@@ -190,7 +196,7 @@
           <div class="process-list">
             <article><span>01</span><h3>Verstehen</h3><p>Ablauf, Rollen, Begriffe und Informationsbedarf mit der Pilotgruppe klären.</p></article>
             <article><span>02</span><h3>Begrenzen</h3><p>Einen engen MVP statt einer vollständigen Jagd-App definieren.</p></article>
-            <article><span>03</span><h3>Erproben</h3><p>Die native App über TestFlight bereitstellen und mit Praxisfeedback verbessern.</p></article>
+            <article><span>03</span><h3>Erproben</h3><p>Die iOS-Version über TestFlight und die Android-Version im Betatest bereitstellen und mit Praxisfeedback verbessern.</p></article>
             <article><span>04</span><h3>Validieren</h3><p>Bedarf, bestehende Ersatzlösungen und Wettbewerbsumfeld außerhalb der Pilotgruppe prüfen.</p></article>
             <article><span>05</span><h3>Entscheiden</h3><p>Den kommerziellen Ausbau vorerst nicht weiterverfolgen.</p></article>
           </div>
@@ -206,8 +212,8 @@
           <div class="result-copy">
             <h2>Technisch erfolgreich. Produktstrategisch bewusst begrenzt.</h2>
             <p>RevierHege erfüllt den Anwendungsfall der Pilotgruppe. Die anschließende Marktvalidierung bestätigte jedoch nicht ausreichend, dass ein größerer kommerzieller Ausbau gegenüber vorhandenen Apps und etablierten Arbeitsweisen gerechtfertigt wäre.</p>
-            <p>Deshalb sind aktuell weder Vermarktung noch Android-Version geplant. Das Projekt bleibt eine Referenz für technische Umsetzung, Praxisvalidierung und eine begründete Produktentscheidung.</p>
-            <div class="decision-note"><span>Aktuelle Entscheidung</span><strong>MVP abgeschlossen · kommerzieller Ausbau vorerst nicht geplant</strong></div>
+            <p>Eine Android-Version erweitert den technischen Praxistest inzwischen auf eine zweite Plattform. Eine breitere Vermarktung ist aktuell weiterhin nicht geplant. Das Projekt bleibt eine Referenz für technische Umsetzung, Praxisvalidierung und eine begründete Produktentscheidung.</p>
+            <div class="decision-note"><span>Aktueller Stand</span><strong>iOS-Pilot validiert · Android im Betatest · Vermarktung vorerst nicht geplant</strong></div>
           </div>
         </div>
       </section>
