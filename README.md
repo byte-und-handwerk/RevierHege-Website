@@ -1,6 +1,6 @@
 # RevierHege-Website
 
-Eigenständige Referenz-Landingpage für die iOS-App RevierHege.
+Eigenständige Referenz-Landingpage für die RevierHege-App. Die iOS-Version ist über TestFlight verfügbar; die Android-Version befindet sich im Betatest.
 
 ## Struktur
 
