@@ -1100,6 +1100,10 @@ blockquote {
     font-size: clamp(2.55rem, 11vw, 3.05rem);
   }
 
+  .legal-hero h1 {
+    font-size: min(2.35rem, 9.5vw);
+  }
+
   .hero-copy {
     min-width: 0;
   }
