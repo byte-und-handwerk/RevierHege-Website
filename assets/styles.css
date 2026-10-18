@@ -789,6 +789,54 @@ blockquote {
   text-transform: uppercase;
 }
 
+.platform-switch {
+  display: inline-flex;
+  margin-top: 46px;
+  border: 1px solid var(--ink);
+}
+
+.platform-switch[hidden],
+.platform-panel[hidden],
+.platform-title[hidden] {
+  display: none;
+}
+
+.platform-tab {
+  min-width: 128px;
+  min-height: 46px;
+  padding: 10px 22px;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  font-weight: 780;
+  line-height: 1.2;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.platform-tab + .platform-tab {
+  border-left: 1px solid var(--ink);
+}
+
+.platform-tab:hover {
+  background: var(--paper);
+}
+
+.platform-tab[aria-selected="true"] {
+  background: var(--ink);
+  color: var(--white);
+}
+
+.platform-title {
+  margin: 58px 0 0;
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+}
+
+.platform-panel .screenshot-gallery {
+  margin-top: 26px;
+}
+
 .screenshot-dialog {
   width: min(92vw, 620px);
   max-width: none;
@@ -1216,6 +1264,15 @@ blockquote {
 
   .phone-frame img {
     border-radius: 29px;
+  }
+
+  .platform-switch {
+    display: flex;
+  }
+
+  .platform-tab {
+    min-width: 0;
+    flex: 1;
   }
 
   .screenshot-gallery {

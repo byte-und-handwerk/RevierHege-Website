@@ -61,3 +61,49 @@ screenshotDialog?.addEventListener("click", (event) => {
 screenshotDialog?.addEventListener("close", () => {
   if (screenshotDialogImage) screenshotDialogImage.removeAttribute("src");
 });
+
+const platformSwitch = document.querySelector("[data-platform-switch]");
+const platformTabs = [...(platformSwitch?.querySelectorAll("[data-platform-tab]") ?? [])];
+const platformPanels = [...document.querySelectorAll("[data-platform-panel]")];
+
+function selectPlatform(platform, focus = false) {
+  platformTabs.forEach((tab) => {
+    const selected = tab.dataset.platformTab === platform;
+    tab.setAttribute("aria-selected", String(selected));
+    tab.tabIndex = selected ? 0 : -1;
+    if (selected && focus) tab.focus();
+  });
+  platformPanels.forEach((panel) => {
+    panel.hidden = panel.dataset.platformPanel !== platform;
+  });
+}
+
+if (platformSwitch && platformTabs.length > 1 && platformPanels.length === platformTabs.length) {
+  platformSwitch.setAttribute("role", "tablist");
+  platformSwitch.setAttribute("aria-label", "Plattform der App-Ansichten");
+  platformTabs.forEach((tab) => tab.setAttribute("role", "tab"));
+  platformPanels.forEach((panel) => {
+    panel.setAttribute("role", "tabpanel");
+    panel.setAttribute("aria-labelledby", `plattform-${panel.dataset.platformPanel}`);
+    panel.querySelectorAll("[data-platform-title]").forEach((title) => {
+      title.hidden = true;
+    });
+  });
+
+  platformTabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => selectPlatform(tab.dataset.platformTab));
+    tab.addEventListener("keydown", (event) => {
+      const step = { ArrowRight: 1, ArrowLeft: -1 }[event.key];
+      let target;
+      if (step) target = platformTabs[(index + step + platformTabs.length) % platformTabs.length];
+      if (event.key === "Home") target = platformTabs[0];
+      if (event.key === "End") target = platformTabs[platformTabs.length - 1];
+      if (!target) return;
+      event.preventDefault();
+      selectPlatform(target.dataset.platformTab, true);
+    });
+  });
+
+  platformSwitch.hidden = false;
+  selectPlatform(platformTabs[0].dataset.platformTab);
+}
