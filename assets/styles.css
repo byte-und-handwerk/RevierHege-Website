@@ -1165,6 +1165,10 @@ blockquote {
     font-size: 2.25rem;
   }
 
+  .cta h2 {
+    font-size: min(2.35rem, 8vw);
+  }
+
   .site-footer {
     grid-template-columns: 1fr;
     gap: 36px;
