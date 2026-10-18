@@ -648,6 +648,75 @@ blockquote {
   color: var(--muted);
 }
 
+.faq-list {
+  max-width: 900px;
+  margin-top: 58px;
+  border-top: 1px solid var(--line);
+}
+
+.faq-list details {
+  border-bottom: 1px solid var(--line);
+}
+
+.faq-list summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 22px 0;
+  font-size: 1.2rem;
+  font-weight: 780;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-list summary::after {
+  content: "+";
+  flex: none;
+  color: var(--rust);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.faq-list details[open] > summary::after {
+  content: "–";
+}
+
+.faq-list summary:hover {
+  color: var(--rust);
+}
+
+.faq-list details > p,
+.faq-list details > ol {
+  max-width: 68ch;
+  margin: 0 0 18px;
+  color: var(--muted);
+}
+
+.faq-list details > ol {
+  padding-left: 1.4em;
+}
+
+.faq-list details > :last-child {
+  margin-bottom: 26px;
+}
+
+.faq-list a {
+  color: var(--forest);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.faq-list a:hover {
+  color: var(--rust);
+}
+
 .screenshot-section {
   overflow: hidden;
 }
