@@ -1085,6 +1085,7 @@ blockquote {
 
   .hero,
   .section,
+  .cta,
   .legal-hero,
   .legal-main {
     padding-right: 20px;
@@ -1163,6 +1164,10 @@ blockquote {
 
   .result-layout blockquote {
     font-size: 2.25rem;
+  }
+
+  .cta h2 {
+    font-size: min(2.35rem, 9.5vw);
   }
 
   .site-footer {
