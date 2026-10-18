@@ -614,6 +614,17 @@ blockquote {
   background: rgba(241, 223, 180, 0.3);
 }
 
+.platform-test span a {
+  color: var(--forest);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.platform-test span a:hover {
+  color: var(--rust);
+}
+
 .feature-list li {
   display: grid;
   grid-template-columns: 58px 1fr;
