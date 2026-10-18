@@ -13,8 +13,8 @@
     <meta property="og:description" content="RevierHege für iOS und Android: ein validierter iOS-Pilot und eine Android-Version im Betatest.">
     <link rel="icon" type="image/png" href="assets/images/revierhege-icon.png">
     <link rel="apple-touch-icon" href="assets/images/revierhege-icon.png">
-    <link rel="stylesheet" href="assets/styles.css?v=20261018-1">
-    <script src="assets/site.js?v=20260808-2" defer></script>
+    <link rel="stylesheet" href="assets/styles.css?v=20261018-2">
+    <script src="assets/site.js?v=20261018-1" defer></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -113,9 +113,9 @@
         <div class="product-layout">
           <figure class="app-preview">
             <div class="phone-frame">
-              <img src="assets/images/screenshots/revierkarte.jpg" width="828" height="1800" alt="Revierkarte der RevierHege-App mit zwei markierten Kirrungen und unterschiedlichem Status">
+              <img src="assets/images/screenshots/ios-karte.jpg" width="828" height="1800" alt="Revierkarte der iOS-App in der Satellitenansicht mit fünf Kirrungen: drei in Ordnung, eine leer, eine mit fälliger Kontrolle">
             </div>
-            <figcaption>Echte Ansicht aus dem funktionierenden iOS-MVP</figcaption>
+            <figcaption>Revierkarte der iOS-App · Testdaten</figcaption>
           </figure>
           <div class="section-heading product-copy">
             <p class="eyebrow">Das entstandene Produkt</p>
@@ -136,7 +136,7 @@
               <li><span>02</span><div><strong>Status und Notizen</strong><p>Aktuellen Zustand festhalten und Informationen ergänzen.</p></div></li>
               <li><span>03</span><div><strong>Historie</strong><p>Änderungen innerhalb der Reviergruppe nachvollziehen.</p></div></li>
               <li><span>04</span><div><strong>Rollen und Revierzuordnung</strong><p>Daten bleiben auf die jeweils freigegebene Gruppe begrenzt.</p></div></li>
-              <li><span>05</span><div><strong>Kontrollintervalle</strong><p>Je Kirrung wahlweise 7, 14 oder 30 Tage; die App zeigt, wann die nächste Kontrolle fällig ist.</p></div></li>
+              <li><span>05</span><div><strong>Kontrollintervalle</strong><p>Je Kirrung ein Kontrollintervall von 7 bis 30 Tagen; die App zeigt, wann die nächste Kontrolle fällig ist.</p></div></li>
             </ul>
           </div>
         </div>
@@ -144,47 +144,95 @@
 
       <section class="section section-white screenshot-section" id="einblicke">
         <div class="section-heading">
-          <p class="eyebrow">Einblicke in den MVP</p>
+          <p class="eyebrow">Einblicke in die App</p>
           <h2>Der gemeinsame Revierstand – vom Überblick bis ins Detail.</h2>
-          <p>Die Aufnahmen zeigen den getesteten Funktionsumfang: Status erfassen, Veränderungen nachvollziehen, Berechtigungen verwalten und alle Beteiligten auf demselben Stand halten.</p>
+          <p>Die Aufnahmen zeigen dieselben Abläufe auf iOS und Android: den Überblick über das Revier, die Kirrungen auf Karte und Liste, die Detailansicht einer Kirrung und das Eintragen einer Beschickung. Kirrungen und Namen sind Testdaten, aufgenommen am 18. Oktober 2026.</p>
         </div>
-        <div class="screenshot-gallery" aria-label="App-Ansichten aus RevierHege">
-          <figure class="screenshot-card">
-            <button class="screenshot-open" type="button" data-screenshot-open data-screenshot-src="assets/images/screenshots/dashboard.png" data-screenshot-alt="Dashboard der RevierHege-App mit Kennzahlen, letzten Aktivitäten und Kirrungsstatus" data-screenshot-caption="Dashboard – Kennzahlen, Aktivitäten und Kirrungsstatus" aria-label="Dashboard vergrößern">
-              <img src="assets/images/screenshots/dashboard.png" width="828" height="1800" loading="lazy" alt="Dashboard der RevierHege-App mit Kennzahlen, letzten Aktivitäten und Kirrungsstatus">
-            </button>
-            <figcaption><strong>Dashboard</strong><span>Kennzahlen, Aktivitäten und Kirrungsstatus.</span></figcaption>
-          </figure>
-          <figure class="screenshot-card">
-            <button class="screenshot-open" type="button" data-screenshot-open data-screenshot-src="assets/images/screenshots/kirrung-status.png" data-screenshot-alt="Detailansicht einer Kirrung mit aktuellem Status, Kontrollintervall und Notizfunktion" data-screenshot-caption="Kirrungsdetail – Status, Kontrollintervall und Notizen" aria-label="Kirrungsdetail vergrößern">
-              <img src="assets/images/screenshots/kirrung-status.png" width="828" height="1800" loading="lazy" alt="Detailansicht einer Kirrung mit aktuellem Status, Kontrollintervall und Notizfunktion">
-            </button>
-            <figcaption><strong>Kirrungsdetail</strong><span>Status, Kontrollintervall und Notizen.</span></figcaption>
-          </figure>
-          <figure class="screenshot-card">
-            <button class="screenshot-open" type="button" data-screenshot-open data-screenshot-src="assets/images/screenshots/kirrung-logbuch.png" data-screenshot-alt="Logbuch und Verwaltungsbereich einer Kirrung mit protokollierten Änderungen" data-screenshot-caption="Logbuch – Änderungen und Verwaltung nachvollziehen" aria-label="Logbuch vergrößern">
-              <img src="assets/images/screenshots/kirrung-logbuch.png" width="828" height="1800" loading="lazy" alt="Logbuch und Verwaltungsbereich einer Kirrung mit protokollierten Änderungen">
-            </button>
-            <figcaption><strong>Logbuch</strong><span>Änderungen und Verwaltung nachvollziehen.</span></figcaption>
-          </figure>
-          <figure class="screenshot-card">
-            <button class="screenshot-open" type="button" data-screenshot-open data-screenshot-src="assets/images/screenshots/profil-berechtigungen.png" data-screenshot-alt="Profilansicht der RevierHege-App mit Revierzuordnung, Rolle und Berechtigungen" data-screenshot-caption="Profil – Revierzuordnung und Berechtigungen" aria-label="Profil und Berechtigungen vergrößern">
-              <img src="assets/images/screenshots/profil-berechtigungen.png" width="828" height="1800" loading="lazy" alt="Profilansicht der RevierHege-App mit Revierzuordnung, Rolle und Berechtigungen">
-            </button>
-            <figcaption><strong>Profil</strong><span>Revierzuordnung und Berechtigungen.</span></figcaption>
-          </figure>
-          <figure class="screenshot-card">
-            <button class="screenshot-open" type="button" data-screenshot-open data-screenshot-src="assets/images/screenshots/profil-support-rechtliches.png" data-screenshot-alt="Profilbereich der RevierHege-App mit Support, Rechtstexten und Kontoverwaltung" data-screenshot-caption="Kontoverwaltung – Support, Rechtliches und persönliche Daten" aria-label="Kontoverwaltung vergrößern">
-              <img src="assets/images/screenshots/profil-support-rechtliches.png" width="828" height="1800" loading="lazy" alt="Profilbereich der RevierHege-App mit Support, Rechtstexten und Kontoverwaltung">
-            </button>
-            <figcaption><strong>Kontoverwaltung</strong><span>Support, Rechtliches und persönliche Daten.</span></figcaption>
-          </figure>
-          <figure class="screenshot-card">
-            <button class="screenshot-open" type="button" data-screenshot-open data-screenshot-src="assets/images/screenshots/mitgliedsanfragen.png" data-screenshot-alt="Ansicht für offene Mitgliedsanfragen innerhalb einer geschlossenen Reviergruppe" data-screenshot-caption="Mitgliedsanfragen – kontrollierter Zugang zum Revier" aria-label="Mitgliedsanfragen vergrößern">
-              <img src="assets/images/screenshots/mitgliedsanfragen.png" width="828" height="1800" loading="lazy" alt="Ansicht für offene Mitgliedsanfragen innerhalb einer geschlossenen Reviergruppe">
-            </button>
-            <figcaption><strong>Mitgliedsanfragen</strong><span>Kontrollierter Zugang zum Revier.</span></figcaption>
-          </figure>
+        <div class="platform-switch" data-platform-switch hidden>
+          <button class="platform-tab" type="button" id="plattform-ios" data-platform-tab="ios" aria-controls="ansichten-ios">iOS</button>
+          <button class="platform-tab" type="button" id="plattform-android" data-platform-tab="android" aria-controls="ansichten-android">Android</button>
+        </div>
+        <div class="platform-panel" id="ansichten-ios" data-platform-panel="ios">
+          <h3 class="platform-title" data-platform-title>iOS</h3>
+          <div class="screenshot-gallery" aria-label="Ansichten der iOS-App">
+            <figure class="screenshot-card">
+              <button class="screenshot-open" type="button" data-screenshot-open data-screenshot-src="assets/images/screenshots/ios-uebersicht.png" data-screenshot-alt="Übersicht der iOS-App mit Zählern für Kontrolle fällig, Leer gemeldet, In Ordnung und Archiviert sowie den letzten drei Aktivitäten" data-screenshot-caption="iOS · Übersicht – Zähler nach Status und letzte Aktivitäten" aria-label="Übersicht (iOS) vergrößern">
+                <img src="assets/images/screenshots/ios-uebersicht.png" width="828" height="1800" loading="lazy" alt="Übersicht der iOS-App mit Zählern für Kontrolle fällig, Leer gemeldet, In Ordnung und Archiviert sowie den letzten drei Aktivitäten">
+              </button>
+              <figcaption><strong>Übersicht</strong><span>Zähler nach Status und letzte Aktivitäten.</span></figcaption>
+            </figure>
+            <figure class="screenshot-card">
+              <button class="screenshot-open" type="button" data-screenshot-open data-screenshot-src="assets/images/screenshots/ios-karte.jpg" data-screenshot-alt="Revierkarte der iOS-App in der Satellitenansicht mit fünf Kirrungen, farbig nach Status markiert" data-screenshot-caption="iOS · Revierkarte – Alle Kirrungen mit ihrem Status auf der Karte" aria-label="Revierkarte (iOS) vergrößern">
+                <img src="assets/images/screenshots/ios-karte.jpg" width="828" height="1800" loading="lazy" alt="Revierkarte der iOS-App in der Satellitenansicht mit fünf Kirrungen, farbig nach Status markiert">
+              </button>
+              <figcaption><strong>Revierkarte</strong><span>Alle Kirrungen mit ihrem Status auf der Karte.</span></figcaption>
+            </figure>
+            <figure class="screenshot-card">
+              <button class="screenshot-open" type="button" data-screenshot-open data-screenshot-src="assets/images/screenshots/ios-karte-auswahl.jpg" data-screenshot-alt="Revierkarte der iOS-App mit ausgewählter Kirrung Eichenschlag und Kurzinfo: In Ordnung, Kontrolle in 7 Tagen" data-screenshot-caption="iOS · Kurzinfo auf der Karte – Status und nächste Kontrolle der ausgewählten Kirrung" aria-label="Kurzinfo auf der Karte (iOS) vergrößern">
+                <img src="assets/images/screenshots/ios-karte-auswahl.jpg" width="828" height="1800" loading="lazy" alt="Revierkarte der iOS-App mit ausgewählter Kirrung Eichenschlag und Kurzinfo: In Ordnung, Kontrolle in 7 Tagen">
+              </button>
+              <figcaption><strong>Kurzinfo auf der Karte</strong><span>Status und nächste Kontrolle der ausgewählten Kirrung.</span></figcaption>
+            </figure>
+            <figure class="screenshot-card">
+              <button class="screenshot-open" type="button" data-screenshot-open data-screenshot-src="assets/images/screenshots/ios-liste.png" data-screenshot-alt="Liste der fünf Kirrungen in der iOS-App mit Statusfilter, Status und letzter Änderung" data-screenshot-caption="iOS · Kirrungen – Liste mit Filter nach Status" aria-label="Kirrungen (iOS) vergrößern">
+                <img src="assets/images/screenshots/ios-liste.png" width="828" height="1800" loading="lazy" alt="Liste der fünf Kirrungen in der iOS-App mit Statusfilter, Status und letzter Änderung">
+              </button>
+              <figcaption><strong>Kirrungen</strong><span>Liste mit Filter nach Status.</span></figcaption>
+            </figure>
+            <figure class="screenshot-card">
+              <button class="screenshot-open" type="button" data-screenshot-open data-screenshot-src="assets/images/screenshots/ios-kirrung.png" data-screenshot-alt="Detailansicht der Kirrung Eichenschlag in der iOS-App mit Status In Ordnung, den Aktionen Kontrolliert – OK, Als aufgefüllt markieren und Als leer melden sowie dem Kontrollintervall von 7 Tagen" data-screenshot-caption="iOS · Kirrungsdetail – Status, Aktionen und Kontrollintervall" aria-label="Kirrungsdetail (iOS) vergrößern">
+                <img src="assets/images/screenshots/ios-kirrung.png" width="828" height="1800" loading="lazy" alt="Detailansicht der Kirrung Eichenschlag in der iOS-App mit Status In Ordnung, den Aktionen Kontrolliert – OK, Als aufgefüllt markieren und Als leer melden sowie dem Kontrollintervall von 7 Tagen">
+              </button>
+              <figcaption><strong>Kirrungsdetail</strong><span>Status, Aktionen und Kontrollintervall.</span></figcaption>
+            </figure>
+            <figure class="screenshot-card">
+              <button class="screenshot-open" type="button" data-screenshot-open data-screenshot-src="assets/images/screenshots/ios-beschickung.png" data-screenshot-alt="Formular Beschickung eintragen in der iOS-App mit 15 kg Mais und dem Zeitpunkt Jetzt" data-screenshot-caption="iOS · Beschickung eintragen – Menge, Einheit, Kirrmittel und Zeitpunkt" aria-label="Beschickung eintragen (iOS) vergrößern">
+                <img src="assets/images/screenshots/ios-beschickung.png" width="828" height="1800" loading="lazy" alt="Formular Beschickung eintragen in der iOS-App mit 15 kg Mais und dem Zeitpunkt Jetzt">
+              </button>
+              <figcaption><strong>Beschickung eintragen</strong><span>Menge, Einheit, Kirrmittel und Zeitpunkt.</span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="platform-panel" id="ansichten-android" data-platform-panel="android">
+          <h3 class="platform-title" data-platform-title>Android</h3>
+          <div class="screenshot-gallery" aria-label="Ansichten der Android-App">
+            <figure class="screenshot-card">
+              <button class="screenshot-open" type="button" data-screenshot-open data-screenshot-src="assets/images/screenshots/android-uebersicht.png" data-screenshot-alt="Übersicht der Android-App mit Zählern für Kontrolle fällig, Leer gemeldet, In Ordnung und Archiviert sowie den letzten Aktivitäten" data-screenshot-caption="Android · Übersicht – Zähler nach Status und letzte Aktivitäten" aria-label="Übersicht (Android) vergrößern">
+                <img src="assets/images/screenshots/android-uebersicht.png" width="828" height="1472" loading="lazy" alt="Übersicht der Android-App mit Zählern für Kontrolle fällig, Leer gemeldet, In Ordnung und Archiviert sowie den letzten Aktivitäten">
+              </button>
+              <figcaption><strong>Übersicht</strong><span>Zähler nach Status und letzte Aktivitäten.</span></figcaption>
+            </figure>
+            <figure class="screenshot-card">
+              <button class="screenshot-open" type="button" data-screenshot-open data-screenshot-src="assets/images/screenshots/android-karte.jpg" data-screenshot-alt="Revierkarte der Android-App in der Hybridansicht mit fünf Kirrungen, farbig nach Status markiert" data-screenshot-caption="Android · Revierkarte – Alle Kirrungen mit ihrem Status auf der Karte" aria-label="Revierkarte (Android) vergrößern">
+                <img src="assets/images/screenshots/android-karte.jpg" width="828" height="1472" loading="lazy" alt="Revierkarte der Android-App in der Hybridansicht mit fünf Kirrungen, farbig nach Status markiert">
+              </button>
+              <figcaption><strong>Revierkarte</strong><span>Alle Kirrungen mit ihrem Status auf der Karte.</span></figcaption>
+            </figure>
+            <figure class="screenshot-card">
+              <button class="screenshot-open" type="button" data-screenshot-open data-screenshot-src="assets/images/screenshots/android-karte-auswahl.jpg" data-screenshot-alt="Revierkarte der Android-App mit ausgewählter Kirrung Eichenschlag und Kurzinfo: In Ordnung, Kontrolle in 7 Tagen" data-screenshot-caption="Android · Kurzinfo auf der Karte – Status und nächste Kontrolle der ausgewählten Kirrung" aria-label="Kurzinfo auf der Karte (Android) vergrößern">
+                <img src="assets/images/screenshots/android-karte-auswahl.jpg" width="828" height="1472" loading="lazy" alt="Revierkarte der Android-App mit ausgewählter Kirrung Eichenschlag und Kurzinfo: In Ordnung, Kontrolle in 7 Tagen">
+              </button>
+              <figcaption><strong>Kurzinfo auf der Karte</strong><span>Status und nächste Kontrolle der ausgewählten Kirrung.</span></figcaption>
+            </figure>
+            <figure class="screenshot-card">
+              <button class="screenshot-open" type="button" data-screenshot-open data-screenshot-src="assets/images/screenshots/android-liste.png" data-screenshot-alt="Liste der Kirrungen in der Android-App mit Statusfilter, Status, letzter Änderung und den Aktionen Auffüllen und Leer melden" data-screenshot-caption="Android · Kirrungen – Liste mit Filter nach Status" aria-label="Kirrungen (Android) vergrößern">
+                <img src="assets/images/screenshots/android-liste.png" width="828" height="1472" loading="lazy" alt="Liste der Kirrungen in der Android-App mit Statusfilter, Status, letzter Änderung und den Aktionen Auffüllen und Leer melden">
+              </button>
+              <figcaption><strong>Kirrungen</strong><span>Liste mit Filter nach Status.</span></figcaption>
+            </figure>
+            <figure class="screenshot-card">
+              <button class="screenshot-open" type="button" data-screenshot-open data-screenshot-src="assets/images/screenshots/android-kirrung.png" data-screenshot-alt="Detailansicht der Kirrung Eichenschlag in der Android-App mit Status In Ordnung, Kontrollintervall von 7 Tagen, den Aktionen Kontrolliert – OK, Auffüllen und Leer melden sowie einer Notiz" data-screenshot-caption="Android · Kirrungsdetail – Status, Aktionen und Kontrollintervall" aria-label="Kirrungsdetail (Android) vergrößern">
+                <img src="assets/images/screenshots/android-kirrung.png" width="828" height="1472" loading="lazy" alt="Detailansicht der Kirrung Eichenschlag in der Android-App mit Status In Ordnung, Kontrollintervall von 7 Tagen, den Aktionen Kontrolliert – OK, Auffüllen und Leer melden sowie einer Notiz">
+              </button>
+              <figcaption><strong>Kirrungsdetail</strong><span>Status, Aktionen und Kontrollintervall.</span></figcaption>
+            </figure>
+            <figure class="screenshot-card">
+              <button class="screenshot-open" type="button" data-screenshot-open data-screenshot-src="assets/images/screenshots/android-beschickung.png" data-screenshot-alt="Dialog Beschickung eintragen in der Android-App mit 15 kg Mais und dem Zeitpunkt Jetzt" data-screenshot-caption="Android · Beschickung eintragen – Menge, Einheit, Kirrmittel und Zeitpunkt" aria-label="Beschickung eintragen (Android) vergrößern">
+                <img src="assets/images/screenshots/android-beschickung.png" width="828" height="1472" loading="lazy" alt="Dialog Beschickung eintragen in der Android-App mit 15 kg Mais und dem Zeitpunkt Jetzt">
+              </button>
+              <figcaption><strong>Beschickung eintragen</strong><span>Menge, Einheit, Kirrmittel und Zeitpunkt.</span></figcaption>
+            </figure>
+          </div>
         </div>
         <p class="gallery-hint">Bild auswählen, um die Ansicht zu vergrößern.</p>
       </section>
